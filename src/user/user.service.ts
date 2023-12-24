@@ -21,4 +21,7 @@ export class UserService {
         return await this.userRepo.update(id, updateUserDto);
         //return await this.userRepo.update(user);
       }
+     async findOneWithUsername(userName: string){
+        return await this.userRepo.findOne({ where: {email: userName}});
+     }
 }
