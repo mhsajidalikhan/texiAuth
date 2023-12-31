@@ -19,7 +19,7 @@ export class AuthService {
         }
         return null;
     }
-   async test(){
+    test(){
     return 'hello';
    }
     async Login(user:User){
